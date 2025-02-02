@@ -18,6 +18,7 @@ Carefully heed the user's instructions.
 Respond in Japanese using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
+  'o3-mini',
   'gpt-4o-mini',
   'gpt-3.5-turbo',
   // 'gpt-3.5-turbo-16k',
@@ -59,6 +60,7 @@ export const modelMaxToken = {
   'gpt-4o': 128000,
   'gpt-4o-2024-05-13': 128000,
   'gpt-4o-mini': 128000,
+  'o3-mini': 200000,
 };
 
 export const modelCost = {
@@ -141,6 +143,10 @@ export const modelCost = {
   'gpt-4o-mini' : {
     prompt: { price: 0.00015, unit: 1000 },
     completion: { price: 0.0006, unit: 1000 },
+  },
+  'o3-mini' : {
+    prompt: { price: 0.00110, unit: 1000 },
+    completion: { price: 0.00440, unit: 1000 },
   }
 };
 
